@@ -1,0 +1,171 @@
+* {
+    color: hsl(257, 40%, 49%);
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url('images/bg-desktop.svg') no-repeat center center/cover;
+    background-color: hsl(257, 40%, 49%);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    padding: 30px 50px;
+}
+
+/* HERO SECTION */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 80%;
+    margin: auto;
+    padding-top: 50px;
+    flex-wrap: wrap; 
+}
+
+/* IMAGE SECTION */
+.landingPage {
+    flex: 1;
+}
+
+.landingPage img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* TEXT SECTION */
+.headline {
+    flex: 1;
+    padding-left: 50px;
+}
+
+.headline h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.headline h6 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.button {
+    background-color: white;
+    color: hsl(257, 40%, 49%);
+    padding: 12px 35px;
+    border: none;
+    border-radius: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+}
+
+/* FOOTER */
+.footer {
+    display: flex;
+    justify-content: flex-end;
+    padding: 80px 50px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.icon img {
+    width: 30px;
+    transition: 0.3s;
+}
+
+.icon img:hover {
+    transform: scale(1.2);
+}
+
+@media (max-width: 1024px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .headline {
+        padding: 20px;
+    }
+    
+    .footer {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .headline h1 {
+        font-size: 2rem;
+    }
+
+    .headline h6 {
+        font-size: 1rem;
+    }
+
+    .button {
+        font-size: 0.9rem;
+        padding: 10px 25px;
+    }
+
+    .footer {
+        justify-content: center;
+    }
+    
+    .social-icons {
+        gap: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        max-width: 90%;
+        flex-direction: column;
+    }
+
+    .headline {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .headline h1 {
+        font-size: 1.8rem;
+    }
+
+    .headline h6 {
+        font-size: 0.9rem;
+    }
+
+    .button {
+        font-size: 0.8rem;
+        padding: 8px 20px;
+    }
+
+    .footer {
+        padding: 10px;
+        justify-content: center;
+    }
+
+    .social-icons {
+        gap: 10px;
+    }
+
+    .icon img {
+        width: 25px;
+    }
+}
